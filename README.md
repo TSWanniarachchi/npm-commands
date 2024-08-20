@@ -11,6 +11,7 @@ A reference guide to essential terminal commands and options for effective npm u
 - [Removing Packages](#removing-packages)
 - [NPM Scripts](#npm-scripts)
 - [Custom NPM Scripts](#custom-npm-scripts)
+- [Resources](#resources)
 
 <hr>
 
@@ -581,3 +582,9 @@ npm run format
 ```
 
 <hr>
+
+<a name="resources"></a>
+
+## Resources
+
+For more detailed information about npm commands, visit the official [NPM CLI Documentation](https://docs.npmjs.com/cli/v10/commands/npm).
