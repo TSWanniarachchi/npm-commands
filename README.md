@@ -8,6 +8,7 @@ A reference guide to essential terminal commands and options for effective npm u
 - [Managing Packages](#managing-packages)
 - [Listing Installed Packages](#listing-installed-packages)
 - [Updating Packages](#updating-packages)
+- [Removing Packages](#removing-packages)
 
 <hr>
 
@@ -471,3 +472,5 @@ npm prune
 ```
 
 More info: [@stackoverflow](https://stackoverflow.com/questions/21417014/npm-command-to-uninstall-or-prune-unused-packages-in-node-js)
+
+<hr>
