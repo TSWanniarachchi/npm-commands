@@ -10,6 +10,7 @@ A reference guide to essential terminal commands and options for effective npm u
 - [Updating Packages](#updating-packages)
 - [Removing Packages](#removing-packages)
 - [NPM Scripts](#npm-scripts)
+- [Custom NPM Scripts](#custom-npm-scripts)
 
 <hr>
 
@@ -557,3 +558,26 @@ Other popular npm inbuilt script command are:
 
 <hr>
 
+<a name="custom-npm-scripts"></a>
+
+## Custom NPM scripts
+
+Custom npm scripts allow you to define and automate various tasks specific to your project. You can specify these scripts in the `scripts` section of your `package.json` file.
+
+Example:
+
+```json
+{
+  "scripts": {
+    "format": "prettier --write .",
+  }
+}
+```
+
+To run this script, use the npm run command followed by the script name:
+
+```
+npm run format
+```
+
+<hr>
