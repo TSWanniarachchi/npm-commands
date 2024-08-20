@@ -9,6 +9,7 @@ A reference guide to essential terminal commands and options for effective npm u
 - [Listing Installed Packages](#listing-installed-packages)
 - [Updating Packages](#updating-packages)
 - [Removing Packages](#removing-packages)
+- [NPM Scripts](#npm-scripts)
 
 <hr>
 
@@ -474,3 +475,85 @@ npm prune
 More info: [@stackoverflow](https://stackoverflow.com/questions/21417014/npm-command-to-uninstall-or-prune-unused-packages-in-node-js)
 
 <hr>
+
+<a name="npm-scripts"></a>
+
+## NPM Scripts
+
+NPM scripts allow you to automate tasks in your project by running commands defined in the `scripts` section of your `package.json` file.
+
+Popular npm script command:
+
+- `npm start`
+- `npm test`
+- `npm build`
+
+### npm start:
+
+Runs the command specified in the "start" property of the `scripts` object in `package.json`. If no `start` script is defined, npm will attempt to run `node server.js`.
+
+Example:
+
+```json
+{
+  "scripts": {
+    "start": "node app.js"
+  }
+}
+```
+
+To run this script:
+
+```
+npm start
+```
+
+### npm test:
+
+Runs the command specified in the "test" property of the scripts object in package.json. This is typically used for running tests.
+
+Example:
+
+```json
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+```
+
+To run this script:
+
+```
+npm test
+```
+
+### npm build:
+
+Runs the command specified in the "build" property of the scripts object in package.json. This is often used for building the project for production.
+
+Example:
+
+```json
+{
+  "scripts": {
+    "build": "webpack --mode production"
+  }
+}
+```
+
+To run this script:
+
+```
+npm run build
+```
+
+Other popular npm inbuilt script command are:
+
+- `npm stop`
+- `npm restart`
+- `npm prestart`
+- `npm poststart`
+
+<hr>
+
