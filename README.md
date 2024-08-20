@@ -5,6 +5,7 @@ A reference guide to essential terminal commands and options for effective npm u
 ## Table of Contents
 - [Basic NPM Commands](#basic-npm-commands)
 - [Creating Package](#creating-package)
+- [Managing Packages](#managing-packages)
 
 <hr>
 
@@ -169,4 +170,174 @@ Changes to the package should come along with changes to the version. If you do 
 
 The package-lock.json file is automatically generated when you run npm install in a project that has a package.json file. This file serves as a detailed manifest that ensures consistent installs across environments by locking the exact versions of the dependencies and their sub-dependencies.
 
- <hr>
+<hr>
+
+<a name="managing-packages"></a>
+
+## Managing Packages
+
+Install everything in package.json:
+
+```
+npm install
+```
+
+Or use shorthand:
+
+```
+npm i
+```
+
+Install a package:
+
+```
+npm install <package name>
+```
+
+Or use shorthand:
+
+```
+npm i <package name>
+```
+
+Example:
+
+```
+npm install lodash
+```
+
+Install a package as devDependency:
+
+```
+npm install <package name> --save-dev
+```
+
+Or use shorthand:
+
+```
+npm install -D <package name>
+```
+
+Example:
+
+```
+npm install lodash --save-dev
+```
+
+Uninstalling local packages:
+
+```
+npm uninstall <package name> --save
+```
+
+Or
+
+```
+npm un <package name> --save
+```
+
+Or
+
+```
+npm remove <package name> --save
+```
+
+Or
+
+```
+npm rm <package name> --save
+```
+
+Example:
+
+```
+npm rm lodash --save
+```
+
+Install global packages:
+
+```
+npm install <package name> g
+```
+
+Uninstall global packages:
+
+```
+npm uninstall <package name> g
+```
+
+Or
+
+```
+npm un <package name> g
+```
+
+Or
+
+```
+npm remove <package name> g
+```
+
+Or
+
+```
+npm rm <package name> g
+```
+
+Example:
+
+```
+npm rm lodash g
+```
+
+Install a package based on its tag:
+
+```
+npm install <package name>@<tag> --save-dev
+```
+
+Example:
+
+```
+npm install lodash@latest --save-dev
+```
+
+Install a package to specific version:
+
+```
+npm install <package name>@<version> --save-dev
+```
+
+Example:
+
+```
+npm install lodash@2.1.1 --save-dev
+```
+
+Install a package to exact specific version:
+
+```
+npm install <package name>@<version> --save-exact
+```
+
+Example:
+
+```
+npm install lodash@2.4.1 --save-exact
+```
+
+### Flags:
+
+**-P :** Production (--save-prod)
+
+**-D :** devDependencies (--save-dev)
+
+**-O :** Optional (--save-optional)
+
+**-E :** Save exact
+
+**-g :** Global
+
+**-S :** Save
+
+**--no-save:** Prevents saving to dependencies
