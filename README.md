@@ -7,6 +7,7 @@ A reference guide to essential terminal commands and options for effective npm u
 - [Creating Package](#creating-package)
 - [Managing Packages](#managing-packages)
 - [Listing Installed Packages](#listing-installed-packages)
+- [Updating Packages](#updating-packages)
 
 <hr>
 
@@ -408,3 +409,65 @@ Lists the dependencies which are outdated:
 ```
 npm outdated
 ```
+
+<hr>
+
+<a name="updating-packages"></a>
+
+## Updating Packages
+
+Updates all listed packages to the latest release version:
+
+```
+npm update
+```
+
+Update specific package:
+
+```
+npm update <package> --save
+```
+
+Example:
+
+```
+npm update lodash --save
+```
+
+Update only dev dependencies:
+
+```
+npm update --dev --save-dev
+```
+
+Update all the packages globally:
+
+```
+npm update -g
+```
+
+Update specific package globally:
+
+```
+npm update -g <package>
+```
+
+Example:
+
+```
+npm update -g lodash
+```
+
+<hr>
+
+<a name="removing-packages"></a>
+
+## Removing Packages
+
+Remove all unused packages(It remove modules not listed in package.json):
+
+```
+npm prune
+```
+
+More info: [@stackoverflow](https://stackoverflow.com/questions/21417014/npm-command-to-uninstall-or-prune-unused-packages-in-node-js)
