@@ -6,6 +6,7 @@ A reference guide to essential terminal commands and options for effective npm u
 - [Basic NPM Commands](#basic-npm-commands)
 - [Creating Package](#creating-package)
 - [Managing Packages](#managing-packages)
+- [Listing Installed Packages](#listing-installed-packages)
 
 <hr>
 
@@ -341,3 +342,69 @@ npm install lodash@2.4.1 --save-exact
 **-S :** Save
 
 **--no-save:** Prevents saving to dependencies
+
+<hr>
+
+<a name="listing-installed-packages"></a>
+
+## Listing Installed Packages
+
+List locally installed packages (includes all dependencies):
+
+```
+npm list
+```
+
+Or use shorthand:
+
+```
+npm ls
+```
+
+Restrict the depth of the tree by 1:
+
+```
+npm list --depth 1
+```
+
+:bulb: **NOTE:** _It gives you only immediate dependencies of the packages._
+
+<br>
+Restrict the depth of the tree by 0:
+
+```
+npm list --depth 0
+```
+
+:bulb: **NOTE:** _It gives you the list of all the packages and no dependencies for that particular package._
+
+<br>
+List globally installed packages (includes all dependencies):
+
+```
+npm list --global
+```
+
+Or
+
+```
+npm list -g
+```
+
+Restrict the depth of the tree by 0 (global packages):
+
+```
+npm list -g --depth 0
+```
+
+Or
+
+```
+npm list --global true --depth 0
+```
+
+Lists the dependencies which are outdated:
+
+```
+npm outdated
+```
